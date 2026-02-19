@@ -23,7 +23,7 @@ jobs:
           cache-dependency-path: backend/package-lock.json
 
       - name: Install backend dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run backend tests
         run: ./node_modules/.bin/jest --coverage
