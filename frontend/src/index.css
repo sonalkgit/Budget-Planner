@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg: #0f0f12;
+  --surface: #1a1a1f;
+  --border: #2a2a32;
+  --text: #e8e8ed;
+  --text-muted: #8888a0;
+  --primary: #6366f1;
+  --primary-hover: #818cf8;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+#root {
+  min-height: 100vh;
+}

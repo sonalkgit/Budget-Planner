@@ -1,0 +1,194 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.toolbar label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.select {
+  padding: 8px 12px;
+  min-width: 180px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.addBtn {
+  padding: 8px 16px;
+  background: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: var(--primary-hover);
+}
+
+.secondaryBtn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  background: var(--surface);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  align-items: end;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.input {
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+}
+
+.formActions button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.formActions button[type='submit'] {
+  background: var(--primary);
+  border: none;
+  color: white;
+}
+
+.formActions button[type='button'] {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.submitError {
+  grid-column: 1 / -1;
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.15);
+  border-radius: 6px;
+  color: #fca5a5;
+  font-size: 0.875rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.income { color: var(--success); }
+.expense { color: var(--danger); }
+
+.smBtn,
+.smBtnDanger {
+  padding: 4px 8px;
+  margin-right: 4px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.smBtn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.smBtnDanger {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.pagination button {
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading,
+.error,
+.empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.error {
+  color: var(--danger);
+}

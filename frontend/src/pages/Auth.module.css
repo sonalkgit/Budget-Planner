@@ -1,0 +1,88 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.card h1 {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.card input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card button:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--danger);
+  border-radius: 6px;
+  color: #fca5a5;
+  font-size: 0.875rem;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.footer a {
+  color: var(--primary);
+}

@@ -1,0 +1,107 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.select {
+  padding: 8px 12px;
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.value,
+.valueSuccess,
+.valueDanger {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.valueSuccess { color: var(--success); }
+.valueDanger { color: var(--danger); }
+
+.chartSection {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.chartSection h2 {
+  margin: 0 0 16px;
+  font-size: 1.125rem;
+}
+
+.categoryList {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.categoryList li {
+  display: flex;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.categoryList li span:first-child {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.loading,
+.error,
+.empty {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.error {
+  color: var(--danger);
+}
