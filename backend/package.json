@@ -1,6 +1,7 @@
 {
   "name": "smart-budget-backend",
   "version": "1.0.0",
+  "comment": "force-re-deploy",
   "description": "Smart Budget & Transaction Engine - NestJS API",
   "scripts": {
     "build": "nest build",

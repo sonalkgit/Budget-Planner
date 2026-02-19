@@ -22,16 +22,11 @@ jobs:
           cache: 'npm'
           cache-dependency-path: backend/package-lock.json
 
-      - name: Install backend deps
-        run: npm ci
-        continue-on-error: true
-
-      - name: Install backend deps (fallback)
-        if: failure()
+      - name: Install backend dependencies
         run: npm install
 
       - name: Run backend tests
-        run: npx jest --coverage
+        run: ./node_modules/.bin/jest --coverage
         env:
           JWT_SECRET: test-secret
 
